@@ -1,0 +1,43 @@
+{
+    "name": "johndoe/blog-package",
+    "description": "A demo package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "John Braun",
+            "email": "johnbraun@pm.me"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4":
+        {
+            "JohnDoe\\BlogPackage\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JohnDoe\\BlogPackage\\Tests\\": "tests",
+            "JohnDoe\\BlogPackage\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-f": "vendor/bin/phpunit --filter"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JohnDoe\\BlogPackage\\BlogPackageServiceProvider"
+            ],
+            "aliases": {
+                "Calculator": "JohnDoe\\BlogPackage\\Facades\\Calculator"
+            }
+        }
+    }
+}
