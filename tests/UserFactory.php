@@ -1,6 +1,6 @@
 <?php
 
-namespace JohnDoe\BlogPackage\Tests;
+namespace Yaromir\ShopPackage\Tests;
 
 use Orchestra\Testbench\Factories\UserFactory as TestbenchUserFactory;
 

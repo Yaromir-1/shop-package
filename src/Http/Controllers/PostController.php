@@ -1,16 +1,11 @@
 <?php
 
-namespace JohnDoe\BlogPackage\Http\Controllers;
+namespace Yaromir\ShopPackage\Http\Controllers;
 
-use JohnDoe\BlogPackage\Events\PostWasCreated;
-use JohnDoe\BlogPackage\Models\Post;
+use Yaromir\ShopPackage\Models\Post;
 
 class PostController extends Controller
 {
-//    public function __construct()
-//    {
-//        $this->middleware('capitalize');
-//    }
 
     public function index()
     {
@@ -46,8 +41,6 @@ class PostController extends Controller
             'title'     => request('title'),
             'body'      => request('body'),
         ]);
-
-        event(new PostWasCreated($post));
 
         return redirect(route('posts.show', $post));
     }

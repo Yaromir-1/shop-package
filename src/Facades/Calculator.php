@@ -1,6 +1,6 @@
 <?php
 
-namespace JohnDoe\BlogPackage\Facades;
+namespace Yaromir\ShopPackage\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

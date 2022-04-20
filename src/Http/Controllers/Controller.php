@@ -1,6 +1,6 @@
 <?php
 
-namespace JohnDoe\BlogPackage\Http\Controllers;
+namespace Yaromir\ShopPackage\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

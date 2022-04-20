@@ -1,8 +1,8 @@
 <?php
 
-namespace JohnDoe\BlogPackage\Tests;
+namespace Yaromir\ShopPackage\Tests;
 
-use JohnDoe\BlogPackage\BlogPackageServiceProvider;
+use Yaromir\ShopPackage\ShopPackageServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
@@ -31,7 +31,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
     protected function getPackageProviders($app)
     {
         return [
-            BlogPackageServiceProvider::class,
+            ShopPackageServiceProvider::class,
         ];
     }
 }

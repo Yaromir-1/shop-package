@@ -1,11 +1,11 @@
 <?php
 
-namespace JohnDoe\BlogPackage\Tests\Unit;
+namespace Yaromir\ShopPackage\Tests\Unit;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use JohnDoe\BlogPackage\Models\Post;
-use JohnDoe\BlogPackage\Tests\TestCase;
-use JohnDoe\BlogPackage\Tests\User;
+use Yaromir\ShopPackage\Models\Post;
+use Yaromir\ShopPackage\Tests\TestCase;
+use Yaromir\ShopPackage\Tests\User;
 
 class PostTest extends TestCase
 {

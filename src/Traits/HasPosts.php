@@ -1,8 +1,8 @@
 <?php
 
-namespace JohnDoe\BlogPackage\Traits;
+namespace Yaromir\ShopPackage\Traits;
 
-use JohnDoe\BlogPackage\Models\Post;
+use Yaromir\ShopPackage\Models\Post;
 
 trait HasPosts
 {

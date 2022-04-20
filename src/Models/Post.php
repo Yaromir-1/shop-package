@@ -1,6 +1,6 @@
 <?php
 
-namespace JohnDoe\BlogPackage\Models;
+namespace Yaromir\ShopPackage\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -18,6 +18,6 @@ class Post extends Model
 
     protected static function newFactory()
     {
-        return \JohnDoe\BlogPackage\Database\Factories\PostFactory::new();
+        return \Yaromir\ShopPackage\Database\Factories\PostFactory::new();
     }
 }

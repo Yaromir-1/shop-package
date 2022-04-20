@@ -50,6 +50,12 @@ class ComposerStaticInit1398acf0f94ed15da794c01ae2191a7e
             'ZBateson\\MbWrapper\\' => 19,
             'ZBateson\\MailMimeParser\\' => 24,
         ),
+        'Y' => 
+        array (
+            'Yaromir\\ShopPackage\\Tests\\' => 26,
+            'Yaromir\\ShopPackage\\Database\\Factories\\' => 39,
+            'Yaromir\\ShopPackage\\' => 20,
+        ),
         'W' => 
         array (
             'Webmozart\\Assert\\' => 17,
@@ -126,12 +132,6 @@ class ComposerStaticInit1398acf0f94ed15da794c01ae2191a7e
             'League\\CommonMark\\' => 18,
             'Laravel\\SerializableClosure\\' => 28,
         ),
-        'J' => 
-        array (
-            'JohnDoe\\BlogPackage\\Tests\\' => 26,
-            'JohnDoe\\BlogPackage\\Database\\Factories\\' => 39,
-            'JohnDoe\\BlogPackage\\' => 20,
-        ),
         'I' => 
         array (
             'Illuminate\\Support\\' => 19,
@@ -178,8 +178,8 @@ class ComposerStaticInit1398acf0f94ed15da794c01ae2191a7e
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'ZBateson\\StreamDecorators\\' => 
         array (
@@ -192,6 +192,18 @@ class ComposerStaticInit1398acf0f94ed15da794c01ae2191a7e
         'ZBateson\\MailMimeParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/zbateson/mail-mime-parser/src',
+        ),
+        'Yaromir\\ShopPackage\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/tests',
+        ),
+        'Yaromir\\ShopPackage\\Database\\Factories\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/database/factories',
+        ),
+        'Yaromir\\ShopPackage\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -347,8 +359,8 @@ class ComposerStaticInit1398acf0f94ed15da794c01ae2191a7e
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\EventDispatcher\\' => 
         array (
@@ -401,18 +413,6 @@ class ComposerStaticInit1398acf0f94ed15da794c01ae2191a7e
         'Laravel\\SerializableClosure\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/serializable-closure/src',
-        ),
-        'JohnDoe\\BlogPackage\\Tests\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/tests',
-        ),
-        'JohnDoe\\BlogPackage\\Database\\Factories\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/database/factories',
-        ),
-        'JohnDoe\\BlogPackage\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
         ),
         'Illuminate\\Support\\' => 
         array (

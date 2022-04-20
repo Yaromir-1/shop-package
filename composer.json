@@ -1,25 +1,25 @@
 {
-    "name": "johndoe/blog-package",
+    "name": "yaromir/shop-package",
     "description": "A demo package",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "John Braun",
-            "email": "johnbraun@pm.me"
+            "name": "Yaromir Usatyuk",
+            "email": "yaromir@gmail.com"
         }
     ],
     "require": {},
     "autoload": {
         "psr-4":
         {
-            "JohnDoe\\BlogPackage\\": "src"
+            "Yaromir\\ShopPackage\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "JohnDoe\\BlogPackage\\Tests\\": "tests",
-            "JohnDoe\\BlogPackage\\Database\\Factories\\": "database/factories"
+            "Yaromir\\ShopPackage\\Tests\\": "tests",
+            "Yaromir\\ShopPackage\\Database\\Factories\\": "database/factories"
         }
     },
     "require-dev": {
@@ -33,10 +33,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "JohnDoe\\BlogPackage\\BlogPackageServiceProvider"
+                "Yaromir\\ShopPackage\\ShopPackageServiceProvider"
             ],
             "aliases": {
-                "Calculator": "JohnDoe\\BlogPackage\\Facades\\Calculator"
+                "Calculator": "Yaromir\\ShopPackage\\Facades\\Calculator"
             }
         }
     }

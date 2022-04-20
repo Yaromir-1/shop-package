@@ -1,8 +1,8 @@
 <?php
 
-namespace JohnDoe\BlogPackage\Database\Factories;
+namespace Yaromir\ShopPackage\Database\Factories;
 
-use JohnDoe\BlogPackage\Models\Post;
+use Yaromir\ShopPackage\Models\Post;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class PostFactory extends Factory
@@ -25,7 +25,6 @@ class PostFactory extends Factory
             'title'     => $this->faker->title,
             'body'      => $this->faker->paragraph,
             'author_id' => 999,
-            'author_type' => 'Fake\Author',
         ];
     }
 }

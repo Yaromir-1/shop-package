@@ -1,12 +1,12 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'bd864d0b18fbd7ca21aaacc64b3600ea3db0b626',
-        'name' => 'johndoe/blog-package',
+        'reference' => '4ccd0ab99b295f9f9136e237f1043e957886df76',
+        'name' => 'yaromir/shop-package',
         'dev' => true,
     ),
     'versions' => array(
@@ -306,15 +306,6 @@
             'replaced' => array(
                 0 => 'v8.83.9',
             ),
-        ),
-        'johndoe/blog-package' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../../',
-            'aliases' => array(),
-            'reference' => 'bd864d0b18fbd7ca21aaacc64b3600ea3db0b626',
-            'dev_requirement' => false,
         ),
         'kodova/hamcrest-php' => array(
             'dev_requirement' => true,
@@ -1228,6 +1219,15 @@
             'aliases' => array(),
             'reference' => '6964c76c7804814a842473e0c8fd15bab0f18e25',
             'dev_requirement' => true,
+        ),
+        'yaromir/shop-package' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'reference' => '4ccd0ab99b295f9f9136e237f1043e957886df76',
+            'dev_requirement' => false,
         ),
         'zbateson/mail-mime-parser' => array(
             'pretty_version' => '2.2.1',

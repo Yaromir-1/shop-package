@@ -1,6 +1,6 @@
 <?php
 
-namespace JohnDoe\BlogPackage;
+namespace Yaromir\ShopPackage;
 
 class Calculator
 {
