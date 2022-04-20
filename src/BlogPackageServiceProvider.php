@@ -16,45 +16,37 @@ class BlogPackageServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'blogpackage');
 
-        $this->app->register(EventServiceProvider::class);
+        //$this->app->register(EventServiceProvider::class);
     }
 
     public function boot()
     {
-        // Register a Facade
-//        $this->app->bind('calculator', function ($app) {
-//            return new Calculator();
-//        });
+
+        $this->app->bind('calculator', function ($app) {
+            return new Calculator();
+        });
 
         $this->registerRoutes();
 
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'blogpackage');
 
-//        // Register a global middleware
-        $kernel = $this->app->make(Kernel::class);
-        $kernel->pushMiddleware(CapitalizeTitle::class);
-//
-//        // Register a route specific middleware
-//        $router = $this->app->make(Router::class);
-//        $router->aliasMiddleware('capitalize', CapitalizeTitle::class);
-//        $router->pushMiddlewareToGroup('web', CapitalizeTitle::class);
+        // Register a global middleware
+        //$kernel = $this->app->make(Kernel::class);
+        //$kernel->pushMiddleware(CapitalizeTitle::class);
 
-
-        if ($this->app->runningInConsole()) {
+        if ($this->app->runningInConsole()){
             $this->publishes([
                 __DIR__.'/../config/config.php' => config_path('blogpackage.php'),
             ], 'config');
 
-            $this->commands([
-                InstallBlogPackage::class,
-            ]);
+//        $this->commands([
+//            InstallBlogPackage::class,
+//        ]);
 
-            if (! class_exists('CreatePostsTable')) {
-                $this->publishes([
-                    __DIR__ . '/../database/migrations/create_posts_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_posts_table.php'),
-                    // you can add any number of migrations here
-                ], 'migrations');
-            }
+            $this->publishes([
+                __DIR__ . '/../database/migrations/create_posts_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_posts_table.php'),
+                // you can add any number of migrations here
+            ], 'migrations');
 
             $this->publishes([
                 __DIR__.'/../resources/views' => resource_path('views/vendor/blogpackage'),
@@ -64,6 +56,8 @@ class BlogPackageServiceProvider extends ServiceProvider
                 __DIR__.'/../resources/assets' => public_path('blogpackage'),
             ], 'assets');
         }
+
+
     }
 
     public function registerRoutes()
