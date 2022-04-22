@@ -21,7 +21,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
         ]);
 
         include_once __DIR__ . '/../database/migrations/create_posts_table.php.stub';
-        include_once __DIR__ . '/../database/migrations/create_users_table.php.stub';
+        include_once __DIR__ . '/../database/migrations/create_clients_table.php';
 
         // run the migration's up() method
         (new \CreatePostsTable)->up();

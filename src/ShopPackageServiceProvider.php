@@ -30,7 +30,12 @@ class ShopPackageServiceProvider extends ServiceProvider
             ], 'config');
 
             $this->publishes([
-                __DIR__ . '/../database/migrations/create_posts_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_posts_table.php'),
+                __DIR__ . '/../database/migrations/create_categories_table.php' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_categories_table.php'),
+                __DIR__ . '/../database/migrations/create_clients_table.php' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_clients_table.php'),
+                __DIR__ . '/../database/migrations/create_orders_table.php' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_orders_table.php'),
+                __DIR__ . '/../database/migrations/create_products_table.php' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_products_table.php'),
+                __DIR__ . '/../database/migrations/create_providers_table.php' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_providers_table.php'),
+                __DIR__ . '/../database/migrations/create_storages_table.php' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_storages_table.php'),
                 // you can add any number of migrations here
             ], 'migrations');
 
