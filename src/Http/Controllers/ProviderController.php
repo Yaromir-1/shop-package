@@ -59,7 +59,7 @@ class ProviderController extends Controller
     {
         $provider->delete();
 
-        return redirect()->route('storages.index')
+        return redirect()->route('providers.index')
             ->with('success', 'Provider deleted successfully');
     }
 }
