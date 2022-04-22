@@ -42,7 +42,7 @@
             <td>{{$product->price}}</td>
             <td>{{$product->category_id}}</td>
             <td>
-                <a href="providers/{{$product->id}}/edit">
+                <a href="products/{{$product->id}}/edit">
                     Update
                 </a>
                 <form action="{{ route('products.destroy',['product' => $product]) }}" method="POST">

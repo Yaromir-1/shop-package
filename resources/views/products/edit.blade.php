@@ -41,19 +41,19 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Description:</strong>
-                <input type="text" name="description" class="form-control" placeholder="Description" value="{{$product->name}}">
+                <input type="text" name="description" class="form-control" placeholder="Description" value="{{$product->description}}">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Price:</strong>
-                <input type="text" name="price" class="form-control" placeholder="Price" value="{{$product->name}}">
+                <input type="text" name="price" class="form-control" placeholder="Price" value="{{$product->price}}">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Category_id:</strong>
-                <input type="number" name="category_id" class="form-control" placeholder="Category_id" value="{{$product->name}}">
+                <input type="number" name="category_id" class="form-control" placeholder="Category_id" value="{{$product->category_id}}">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">

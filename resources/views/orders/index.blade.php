@@ -40,7 +40,7 @@
             <td>{{$order->paid_amount}}</td>
             <td>{{$order->client_id}}</td>
             <td>
-                <a href="providers/{{$product->id}}/edit">
+                <a href="orders/{{$order->id}}/edit">
                     Update
                 </a>
                 <form action="{{ route('orders.destroy',['order' => $order]) }}" method="POST">

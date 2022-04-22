@@ -40,10 +40,10 @@
             <td>{{$client->email}}</td>
             <td>{{$client->password}}</td>
             <td>
-                <a href="storages/{{$client->id}}/edit">
+                <a href="clients/{{$client->id}}/edit">
                     Update
                 </a>
-                <form action="{{ route('storages.destroy',['client' => $client]) }}" method="POST">
+                <form action="{{ route('clients.destroy',['client' => $client]) }}" method="POST">
                     @csrf
                     @method('DELETE')
                     <button type="submit" title="delete" style="border: none; background-color:transparent;">

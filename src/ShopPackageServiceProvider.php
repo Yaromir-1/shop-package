@@ -2,6 +2,7 @@
 
 namespace Yaromir\ShopPackage;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 
@@ -16,8 +17,8 @@ class ShopPackageServiceProvider extends ServiceProvider
     public function boot()
     {
 
-        $this->app->bind('calculator', function ($app) {
-            return new Calculator();
+        $this->app->bind('exchanger', function ($app) {
+            return new Exchanger();
         });
 
         $this->registerRoutes();
@@ -28,6 +29,15 @@ class ShopPackageServiceProvider extends ServiceProvider
             $this->publishes([
                 __DIR__.'/../config/config.php' => config_path('shoppackage.php'),
             ], 'config');
+
+            $this->publishes([
+                __DIR__ . '/../database/seeders/CategorySeeder.php' => database_path('seeders/CategorySeeder.php'),
+                __DIR__ . '/../database/seeders/ClientSeeder.php' => database_path('seeders/ClientSeeder.php'),
+                __DIR__ . '/../database/seeders/ProviderSeeder.php' => database_path('seeders/ProviderSeeder.php'),
+                __DIR__ . '/../database/seeders/StorageSeeder.php' => database_path('seeders/StorageSeeder.php'),
+                __DIR__ . '/../database/seeders/OrderSeeder.php' => database_path('seeders/OrderSeeder.php'),
+                __DIR__ . '/../database/seeders/ProductSeeder.php' => database_path('seeders/ProductSeeder.php'),
+            ], 'seeders');
 
             $this->publishes([
                 __DIR__ . '/../database/migrations/create_categories_table.php' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_categories_table.php'),
@@ -64,4 +74,5 @@ class ShopPackageServiceProvider extends ServiceProvider
             'middleware' => config('shoppackage.middleware'),
         ];
     }
+
 }

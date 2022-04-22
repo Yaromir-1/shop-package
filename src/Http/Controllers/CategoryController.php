@@ -4,6 +4,7 @@ namespace Yaromir\ShopPackage\Http\Controllers;
 
 use Yaromir\ShopPackage\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 
 class CategoryController extends Controller
 {
@@ -46,7 +47,7 @@ class CategoryController extends Controller
     public function update(Request $request, Category $category)
     {
         $request->validate([
-            'name' => 'required|string|unique:categories|max:255',
+            'name' => ['required','string','max:255', Rule::unique('categories')->ignore($category)],
             'measure' => 'required|string|in:kg,pc',
         ]);
         $category->update($request->all());

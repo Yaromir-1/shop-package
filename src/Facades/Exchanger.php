@@ -4,10 +4,10 @@ namespace Yaromir\ShopPackage\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class Calculator extends Facade
+class Exchanger extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'calculator';
+        return 'exchanger';
     }
 }

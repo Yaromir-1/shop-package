@@ -4,6 +4,7 @@ namespace Yaromir\ShopPackage\Http\Controllers;
 
 use Yaromir\ShopPackage\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 
 class ProductController extends Controller
 {
@@ -48,7 +49,7 @@ class ProductController extends Controller
     public function update(Request $request, Product $product)
     {
         $request->validate([
-            'name' => 'required|string|max:255|unique:products',
+            'name' => ['required','string','max:255', Rule::unique('products')->ignore($product)],
             'description' => 'required|string',
             'price' => 'required|numeric',
             'category_id' => 'required|integer',

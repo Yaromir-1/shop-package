@@ -5,6 +5,7 @@ namespace Yaromir\ShopPackage\Http\Controllers;
 use Illuminate\Support\Facades\Hash;
 use Yaromir\ShopPackage\Models\Client;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 
 class ClientController extends Controller
 {
@@ -25,7 +26,7 @@ class ClientController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|string|unique:clients|email',
+            'email'    => ['required', 'string', 'email', 'max:255', 'unique:clients'],
             'password' => 'required|string',
         ]);
 
@@ -53,7 +54,7 @@ class ClientController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|string|unique:clients|email',
+            'email'    => ['required', 'string', 'email', 'max:255', Rule::unique('clients')->ignore($client)],
             'password' => 'required|string',
         ]);
 

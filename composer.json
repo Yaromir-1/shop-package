@@ -13,7 +13,8 @@
     "autoload": {
         "psr-4":
         {
-            "Yaromir\\ShopPackage\\": "src"
+            "Yaromir\\ShopPackage\\": "src",
+            "Yaromir\\ShopPackage\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
@@ -36,7 +37,7 @@
                 "Yaromir\\ShopPackage\\ShopPackageServiceProvider"
             ],
             "aliases": {
-                "Calculator": "Yaromir\\ShopPackage\\Facades\\Calculator"
+                "Exchanger": "Yaromir\\ShopPackage\\Facades\\Exchanger"
             }
         }
     }
