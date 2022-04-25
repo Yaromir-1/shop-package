@@ -20,6 +20,9 @@ class ShopPackageServiceProvider extends ServiceProvider
         $this->app->bind('exchanger', function ($app) {
             return new Exchanger();
         });
+        $this->app->bind('delivery', function ($app) {
+            return new Delivery();
+        });
 
         $this->registerRoutes();
 

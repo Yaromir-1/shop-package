@@ -9,7 +9,9 @@
             "email": "yaromir@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "kmlaravel/laravel-geographical-calculator": "^2.2"
+    },
     "autoload": {
         "psr-4":
         {
