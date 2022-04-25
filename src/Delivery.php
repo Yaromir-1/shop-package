@@ -14,7 +14,7 @@ class Delivery
         $this->result = 0;
     }
 
-    private function calculateDeliveryPrice(float $latitude1, float $longitude1, float $latitude2, float $longitude2, float $pricePerHour)
+    public function calculateDeliveryPrice(float $latitude1, float $longitude1, float $latitude2, float $longitude2, float $pricePerHour)
     {
         $selectedService = config('shoppackage.selected_geo_service');
         switch ($selectedService) {
